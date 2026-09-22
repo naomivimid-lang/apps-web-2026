@@ -1,19 +1,80 @@
+
 <!DOCTYPE html>
-<html>
+<html lang="es">
+
 <head>
-    <title>Mi primera página web</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Sitio Web 2026</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <h1 onclick="saludar()">Hola, esta es mi primera página web</h1>
+    <header>
+        <h1>Mi Sitio Web 2026</h1>
 
-    <p>Estoy realizando la Práctica 1 de Aplicaciones Web.</p>
+        <nav>
+            <ul>
+                <li>
+                    <a href="https://www.upp.edu.mx/">Inicio</a>
+                </li>
 
-    <button onclick="saludar()">Haz clic aquí</button>
+                <li>
+                    <a href="#contacto">Contacto</a>
+                </li>
 
-    <script src="script.js"></script>
+                <li>
+                    <a href="#registro">Registro</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Contenido principal -->
+    <main>
+
+        <section>
+            <h2 class="noticias">Noticias principales</h2>
+
+            <article>
+                <h3>Título del artículo</h3>
+
+                <p>
+                    Este es un ejemplo de una noticia principal de mi sitio web.
+                    Aquí puedo colocar información importante para los visitantes.
+                </p>
+
+                <img 
+                    src="https://web.dev/static/html/image/hero-html_480.png?hl=es-419"
+                    alt="Imagen relacionada con HTML">
+            </article>
+        </section>
+
+        <aside>
+            <h3>Enlaces de interés</h3>
+
+            <p>
+                Aquí puedes colocar información
+            </p>
+        </aside>
+
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <p>Puedes contactarnos para obtener más información.</p>
+        </section>
+
+        <section id="registro">
+            <h2>Registro</h2>
+            <p>Regístrate para recibir más información.</p>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Mi Sitio Web | Todos los derechos reservados.</p>
+    </footer>
 
 </body>
+
 </html>

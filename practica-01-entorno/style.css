@@ -1,13 +1,105 @@
+
 body {
-    font-family: Arial;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f8;
+    color: #333;
+}
+
+header {
+    background-color: #4a69bd;
+    color: white;
     text-align: center;
-    margin-top: 100px;
+    padding: 25px;
 }
 
-h1 {
-    color: red;
+header h1 {
+    margin: 0 0 20px;
+    font-size: 35px;
 }
 
-button {
-    padding: 10px;
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+main {
+    width: 80%;
+    margin: 30px auto;
+}
+
+.noticias {
+    color: #4a69bd;
+    text-align: center;
+    font-size: 28px;
+}
+
+article {
+    background-color: white;
+    padding: 25px;
+    margin-top: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+article h3 {
+    color: #4a69bd;
+    font-size: 24px;
+}
+
+article p {
+    font-size: 17px;
+    line-height: 1.6;
+}
+
+article img {
+    display: block;
+    width: 200px;
+    height: 200px;
+    margin: 20px auto;
+    border-radius: 10px;
+}
+
+aside {
+    background-color: #dfe6e9;
+    padding: 20px;
+    margin-top: 25px;
+    border-radius: 12px;
+}
+
+aside h3 {
+    color: #2d3436;
+}
+
+#contacto,
+#registro {
+    background-color: white;
+    padding: 20px;
+    margin-top: 25px;
+    border-radius: 12px;
+}
+
+
+footer {
+    background-color: #2d3436;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
 }
