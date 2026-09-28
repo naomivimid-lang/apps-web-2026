@@ -1,122 +1,115 @@
-/* Diseño general de la página */
+
+
 body {
     margin: 0;
     padding: 0;
 
-    font-family: Arial, sans-serif;
-
     background-color: #F8FAFC;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    height: 100vh;
+    font-family: "Roboto", sans-serif;
 }
 
-/* Cuadro principal de inicio de sesión */
+
 .login-box {
-    width: 350px;
     padding: 30px;
 
     background-color: white;
 
     border: 3px solid #1E293B;
+
     border-radius: 12px;
 
     box-shadow: 0 5px 15px rgba(30, 41, 59, 0.25);
 }
 
-/* Título */
+
 .login-box h1 {
-    text-align: center;
+
+    font-family: "Roboto Slab", serif;
 
     color: #1E293B;
 
+    text-align: center;
+
     margin-bottom: 10px;
+
+    font-weight: 700;
 }
 
-/* Texto debajo del título */
+
+
 .login-box p {
-    text-align: center;
+
+    /* Roboto Mono para subtítulos */
+    font-family: "Roboto Mono", monospace;
 
     color: #64748B;
 
+    text-align: center;
+
     margin-bottom: 25px;
-}
-
-/* Etiquetas */
-.login-box label {
-    display: block;
-
-    margin-top: 15px;
-    margin-bottom: 5px;
-
-    color: #1E293B;
-
-    font-weight: bold;
-}
-
-/* Campos de correo y contraseña */
-.login-box input {
-    width: 100%;
-
-    padding: 12px;
-
-    box-sizing: border-box;
-
-    border: 2px solid #CBD5E1;
-    border-radius: 6px;
-
-    background-color: #F8FAFC;
 
     font-size: 14px;
 }
 
-/* Cuando seleccionamos un campo */
+.login-box label {
+
+    /* Texto normal */
+    font-family: "Roboto", sans-serif;
+
+    color: #1E293B;
+
+    font-weight: 500;
+}
+
+
+.login-box input {
+
+    font-family: "Roboto", sans-serif;
+
+    border: 2px solid #CBD5E1;
+
+    border-radius: 6px;
+}
+
+
+
 .login-box input:focus {
-    outline: none;
 
     border-color: #2563EB;
 
     box-shadow: 0 0 5px rgba(37, 99, 235, 0.3);
 }
 
-/* Botón de iniciar sesión */
-.login-box button {
-    width: 100%;
+.login-box .btn-primary {
 
-    padding: 12px;
-
-    margin-top: 25px;
+    /* Roboto para botones */
+    font-family: "Roboto", sans-serif;
 
     background-color: #2563EB;
 
-    color: white;
+    border-color: #2563EB;
 
-    border: none;
-
-    border-radius: 6px;
-
-    font-size: 16px;
-
-    font-weight: bold;
-
-    cursor: pointer;
+    font-weight: 700;
 }
 
-/* Cuando pasamos el mouse sobre el botón */
-.login-box button:hover {
+
+.login-box .btn-primary:hover {
+
     background-color: #1E293B;
+
+    border-color: #1E293B;
 }
 
-/* Pequeño detalle verde */
+
 .login-box::before {
+
     content: "";
 
     display: block;
 
     width: 60px;
+
     height: 5px;
 
     margin: 0 auto 20px auto;
