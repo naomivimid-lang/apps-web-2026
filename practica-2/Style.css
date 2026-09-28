@@ -1,8 +1,11 @@
+/* Diseño general de la página */
 body {
     margin: 0;
     padding: 0;
+
     font-family: Arial, sans-serif;
-    background-color: #f2f2f2;
+
+    background-color: #F8FAFC;
 
     display: flex;
     justify-content: center;
@@ -11,63 +14,114 @@ body {
     height: 100vh;
 }
 
+/* Cuadro principal de inicio de sesión */
 .login-box {
     width: 350px;
     padding: 30px;
 
     background-color: white;
 
-    border: 2px solid #6b2003;
-    border-radius: 10px;
+    border: 3px solid #1E293B;
+    border-radius: 12px;
 
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 5px 15px rgba(30, 41, 59, 0.25);
 }
 
 /* Título */
 .login-box h1 {
     text-align: center;
-    color: #320531;
+
+    color: #1E293B;
+
+    margin-bottom: 10px;
 }
 
+/* Texto debajo del título */
 .login-box p {
     text-align: center;
-    color: #555;
+
+    color: #64748B;
+
+    margin-bottom: 25px;
 }
 
+/* Etiquetas */
 .login-box label {
     display: block;
-    margin-top: 20px;
+
+    margin-top: 15px;
     margin-bottom: 5px;
 
-    color: #333;
+    color: #1E293B;
+
     font-weight: bold;
 }
 
+/* Campos de correo y contraseña */
 .login-box input {
     width: 100%;
-    padding: 10px;
+
+    padding: 12px;
 
     box-sizing: border-box;
 
-    border: 1px solid #999;
-    border-radius: 5px;
+    border: 2px solid #CBD5E1;
+    border-radius: 6px;
+
+    background-color: #F8FAFC;
+
+    font-size: 14px;
 }
 
+/* Cuando seleccionamos un campo */
+.login-box input:focus {
+    outline: none;
+
+    border-color: #2563EB;
+
+    box-shadow: 0 0 5px rgba(37, 99, 235, 0.3);
+}
+
+/* Botón de iniciar sesión */
 .login-box button {
     width: 100%;
+
     padding: 12px;
 
     margin-top: 25px;
 
-    background-color: #6b2003;
+    background-color: #2563EB;
+
     color: white;
 
     border: none;
-    border-radius: 5px;
+
+    border-radius: 6px;
+
+    font-size: 16px;
+
+    font-weight: bold;
 
     cursor: pointer;
 }
 
+/* Cuando pasamos el mouse sobre el botón */
 .login-box button:hover {
-    background-color: #8b2a08;
+    background-color: #1E293B;
+}
+
+/* Pequeño detalle verde */
+.login-box::before {
+    content: "";
+
+    display: block;
+
+    width: 60px;
+    height: 5px;
+
+    margin: 0 auto 20px auto;
+
+    background-color: #10B981;
+
+    border-radius: 5px;
 }
